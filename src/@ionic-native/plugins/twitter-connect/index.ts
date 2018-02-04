@@ -81,4 +81,11 @@ export class TwitterConnect extends IonicNativePlugin {
    */
   @Cordova()
   showUser(): Promise<any> { return; }
+
+  /**
+   * Returns user's profile information (with email)
+   * @returns {Promise<any>} returns a promise that resolves if user profile is successfully retrieved and rejects if request fails
+   */
+  @Cordova()
+  verifyCredentials(): Promise<any> { return; }
 }
